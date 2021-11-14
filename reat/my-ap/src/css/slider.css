@@ -1,0 +1,274 @@
+:root {
+  --in: #DD91A6;
+  --go:#A0C3B8;
+}
+
+.slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container .social-icons {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  width: 40px;
+  height: 50px;
+}
+
+.slide-container .social-icons .instagram {
+  color: #DD91A6;
+}
+
+.slide-container .social-icons .twitter, .slide-container .social-icons .linkedin {
+  color: #A0C3B8;
+}
+
+.slide-container .text {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+  margin: auto 0;
+  gap: .50rem;
+  z-index: 1;
+  color: #4d4949;
+  -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slide-container .text .visible {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out 200ms;
+  transition: opacity 200ms ease-in-out 200ms;
+}
+
+.slide-container .text .blurout {
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  opacity: 0;
+}
+
+.slide-container .text .textheader {
+  position: relative;
+  font-size: 3.5rem;
+  line-height: 60px;
+  overflow: hidden;
+}
+
+.slide-container .text .textheader .apollo {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100px;
+  height: 200%;
+  border: 30px dashed #fffefe;
+  -webkit-transform: translateX(210px) rotate(15deg);
+          transform: translateX(210px) rotate(15deg);
+  visibility: hidden;
+}
+
+.slide-container .text .textheader .move {
+  visibility: visible;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+  -webkit-transition: -webkit-transform 400ms ease-in 200ms;
+  transition: -webkit-transform 400ms ease-in 200ms;
+  transition: transform 400ms ease-in 200ms;
+  transition: transform 400ms ease-in 200ms, -webkit-transform 400ms ease-in 200ms;
+}
+
+.slide-container .text .textheader .head, .slide-container .text .textheader span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+.slide-container .text .textheader .head {
+  margin-right: 1rem;
+}
+
+.slide-container .text .textheader span {
+  font-weight: 100;
+}
+
+.slide-container .text .subtext {
+  width: 50%;
+  font-size: .75rem;
+  z-index: 2;
+}
+
+.slide-container .container {
+  background-color: slateblue;
+  position: relative;
+  height: 100%;
+  right: 0%;
+  width: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.slide-container .container .numcontainer {
+  overflow: hidden;
+  position: relative;
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  z-index: 5;
+}
+
+.slide-container .container .numcontainer .numApollo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 10px;
+  border: 12px dashed rgba(255, 255, 255, 0.5);
+  -webkit-transform: translateX(70px) rotate(15deg);
+          transform: translateX(70px) rotate(15deg);
+}
+
+.slide-container .container .numcontainer .move {
+  visibility: visible;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+  -webkit-transition: -webkit-transform 300ms ease-in 100ms;
+  transition: -webkit-transform 300ms ease-in 100ms;
+  transition: transform 300ms ease-in 100ms;
+  transition: transform 300ms ease-in 100ms, -webkit-transform 300ms ease-in 100ms;
+}
+
+.slide-container .container .numcontainer .number {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.slide-container .container .numcontainer .visible {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out 200ms;
+  transition: opacity 300ms ease-in-out 200ms;
+}
+
+.slide-container .container .numcontainer .blurout {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.slide-container .container .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+.slide-container .container .slide .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background: white;
+}
+
+.slide-container .container .slide .slider .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: salmon;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.slide-container .container .slide .slider .img img {
+  height: calc(100% + 0px);
+  width: 110%;
+}
+
+.slide-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 2rem -2px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 0px 2rem -2px rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  margin: auto;
+  -webkit-transform: translateX(85px);
+          transform: translateX(85px);
+}
+
+.slide-btns .btn1, .slide-btns .btn2 {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  width: 85px;
+  height: 60px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.slide-btns .btn1 {
+  border-right: 1px solid black;
+}
+
+.slide-btns .btn2 i, .slide-btns .btn1 i {
+  position: absolute;
+  left: 40%;
+  bottom: 35%;
+  color: black;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.slide-btns .btn2hover, .slide-btns .btn1hover {
+  position: absolute;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  inset: 0 0 0 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.slide-btns .btn1:hover.btn1 i, .slide-btns .btn1:hover.btn2 i, .slide-btns .btn2:hover.btn1 i, .slide-btns .btn2:hover.btn2 i {
+  color: white;
+}
+
+.slide-btns .btn1:hover .btn1hover, .slide-btns .btn1:hover .btn2hover, .slide-btns .btn2:hover .btn1hover, .slide-btns .btn2:hover .btn2hover {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+/*# sourceMappingURL=slider.css.map */

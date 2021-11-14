@@ -1,0 +1,375 @@
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.content-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 30px 3rem -7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 30px 3rem -7px rgba(0, 0, 0, 0.3);
+}
+
+.content-container .content .places-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  position: relative;
+}
+
+.content-container .content .places-box .destination-img {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.content-container .content .places-box .destination-img img {
+  width: 500px;
+  height: 1000px;
+  height: auto;
+  background-position: center;
+  margin-bottom: auto;
+  margin-left: 8rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+.content-container .content .places-box .destination-img .dot {
+  position: absolute;
+  left: 60%;
+  bottom: 45%;
+  border-radius: 100%;
+  color: white;
+  border: 3px solid white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content-container .content .places-box .destination-img::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  left: 65%;
+  bottom: 0%;
+  border-radius: 5px;
+  top: 15%;
+}
+
+.content-container .content .places-box .about-destination {
+  position: absolute;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 10%;
+  right: 10%;
+  gap: 1rem;
+  z-index: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  width: 25%;
+  background-color: #2e2c2c;
+}
+
+.content-container .content .places-box .about-destination .date, .content-container .content .places-box .about-destination .description, .content-container .content .places-box .about-destination .readmore {
+  font-size: 10px;
+  padding: 1rem 3rem 0 2rem;
+}
+
+.content-container .content .places-box .about-destination .date, .content-container .content .places-box .about-destination .readmore a {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.content-container .content .places-box .about-destination .destination-name {
+  padding: 0 2rem;
+}
+
+.content-container .content .places-box .about-destination .destination-slidebtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-container .content .places-box .about-destination .destination-slidebtn .slidebtn-left, .content-container .content .places-box .about-destination .destination-slidebtn .slidebtn-right {
+  padding: .75rem 2.5rem;
+  color: burlywood;
+  width: 100%;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.content-container .content .places-box .about-destination .destination-slidebtn .slidebtn-left:hover, .content-container .content .places-box .about-destination .destination-slidebtn .slidebtn-right:hover {
+  background-color: black;
+}
+
+.content-container .content .second-section-header, .content-container .content .third-section-header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: auto;
+  padding: 3rem;
+}
+
+.content-container .content .project-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 71vh;
+  gap: 3rem;
+  margin-top: auto;
+}
+
+.content-container .content .project-images .image-content2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.content-container .content .project-images .image-content2 img {
+  margin-top: 2rem;
+}
+
+.content-container .content .project-images .image-content3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.content-container .content .project-images .image-content1, .content-container .content .project-images .image-content2, .content-container .content .project-images .image-content3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+.content-container .content .project-images .image-content1 img, .content-container .content .project-images .image-content2 img, .content-container .content .project-images .image-content3 img {
+  border-radius: 5px;
+}
+
+.content-container .content .project-images .image-content1 .climbing, .content-container .content .project-images .image-content1 .safari, .content-container .content .project-images .image-content1 .skydiving, .content-container .content .project-images .image-content2 .climbing, .content-container .content .project-images .image-content2 .safari, .content-container .content .project-images .image-content2 .skydiving, .content-container .content .project-images .image-content3 .climbing, .content-container .content .project-images .image-content3 .safari, .content-container .content .project-images .image-content3 .skydiving {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.content-container .content .project-images .image-content1 .climbing::before, .content-container .content .project-images .image-content1 .safari::before, .content-container .content .project-images .image-content1 .skydiving::before, .content-container .content .project-images .image-content2 .climbing::before, .content-container .content .project-images .image-content2 .safari::before, .content-container .content .project-images .image-content2 .skydiving::before, .content-container .content .project-images .image-content3 .climbing::before, .content-container .content .project-images .image-content3 .safari::before, .content-container .content .project-images .image-content3 .skydiving::before {
+  content: '';
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.content-container .content .project-images .image-content1 .climbing::before, .content-container .content .project-images .image-content2 .climbing::before, .content-container .content .project-images .image-content3 .climbing::before {
+  background-color: #9FCCED;
+}
+
+.content-container .content .project-images .image-content1 .safari::before, .content-container .content .project-images .image-content2 .safari::before, .content-container .content .project-images .image-content3 .safari::before {
+  background-color: #F7E7C2;
+}
+
+.content-container .content .project-images .image-content1 .skydiving::before, .content-container .content .project-images .image-content2 .skydiving::before, .content-container .content .project-images .image-content3 .skydiving::before {
+  background-color: #95a8c0;
+}
+
+.content-container .content .project-images .image-content1 .climbing-link a, .content-container .content .project-images .image-content1 .safari-link a, .content-container .content .project-images .image-content1 .diving-link a, .content-container .content .project-images .image-content2 .climbing-link a, .content-container .content .project-images .image-content2 .safari-link a, .content-container .content .project-images .image-content2 .diving-link a, .content-container .content .project-images .image-content3 .climbing-link a, .content-container .content .project-images .image-content3 .safari-link a, .content-container .content .project-images .image-content3 .diving-link a {
+  font-size: .86rem;
+}
+
+.content-container .content .project-images .image-content1 .climbing-link a, .content-container .content .project-images .image-content2 .climbing-link a, .content-container .content .project-images .image-content3 .climbing-link a {
+  color: #9FCCED;
+}
+
+.content-container .content .project-images .image-content1 .safari-link a, .content-container .content .project-images .image-content2 .safari-link a, .content-container .content .project-images .image-content3 .safari-link a {
+  color: #FDD365;
+}
+
+.content-container .content .project-images .image-content1 .diving-link a, .content-container .content .project-images .image-content2 .diving-link a, .content-container .content .project-images .image-content3 .diving-link a {
+  color: #5E81A9;
+}
+
+.content-container .content .project-images .image-content1 img, .content-container .content .project-images .image-content2 img, .content-container .content .project-images .image-content3 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 230px;
+}
+
+.content-container .content .project-images .image-content1 p, .content-container .content .project-images .image-content2 p, .content-container .content .project-images .image-content3 p {
+  font-size: 11px;
+  margin-top: 2rem;
+}
+
+.content-container .content .fourthSection::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  background-color: #4b4949;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  width: 300%;
+  bottom: -5%;
+  left: -40%;
+  right: 30%;
+}
+
+.content-container .content .fourthSection {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+  gap: 2rem;
+}
+
+.content-container .content .fourthSection .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  pointer-events: none;
+  margin-top: auto;
+  border-radius: 50px;
+  background-color: #1cd453;
+  -webkit-box-shadow: 7px 15px 25px rgba(0, 0, 0, 0.12);
+          box-shadow: 7px 15px 25px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.content-container .content .fourthSection .aboutperson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  gap: .50rem;
+  width: 350px;
+  border-radius: 10px;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 20px 2rem 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 2rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.content-container .content .fourthSection .aboutperson .image img {
+  width: 100px;
+  border-radius: 400px;
+}
+
+.content-container .content .fourthSection .aboutperson .person-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.content-container .content .fourthSection .aboutperson .job-description {
+  font-weight: 100;
+}
+
+.content-container .content .fourthSection .aboutperson .number {
+  font-family: 'poppins';
+  color: yellowgreen;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content-container .content .fourthSection .aboutperson p {
+  font-size: 11px;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.content-container .content .fourthSection .aboutperson .followme-discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: .65rem;
+  color: white;
+}
+
+.content-container .content .fourthSection .aboutperson .followme-discover .follow {
+  border: 1px solid #9e9a9a;
+}
+
+.content-container .content .fourthSection .aboutperson .followme-discover .discover {
+  background-color: white;
+  color: red;
+}
+
+.content-container .content .fourthSection .aboutperson .followme-discover .follow, .content-container .content .fourthSection .aboutperson .followme-discover .discover {
+  padding: .75rem 2rem;
+}
+/*# sourceMappingURL=content.css.map */

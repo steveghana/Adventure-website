@@ -1,0 +1,80 @@
+:root {
+  --in: #DD91A6;
+  --go:#A0C3B8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navigation {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+}
+
+.navigation .appname-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navigation .appname-container .in {
+  color: var(--in);
+}
+
+.navigation .appname-container .go {
+  color: var(--go);
+}
+
+.navigation .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navigation .stylish-hamburger {
+  margin-left: auto;
+}
+
+.navigation .stylish-hamburger .hamburger {
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  padding: .40rem;
+}
+
+.navigation .stylish-hamburger .hamburger .line1, .navigation .stylish-hamburger .hamburger .line2, .navigation .stylish-hamburger .hamburger .line3 {
+  width: 10px;
+  margin: .10rem;
+  height: 2px;
+  background-color: var(--go);
+}
+
+.navigation .stylish-hamburger .hamburger .line2 {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.navigation .stylish-hamburger .hamburger .line3 {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,58 @@
+:root {
+    --in: #DD91A6;
+    --go:#A0C3B8;
+}
+ul{
+    list-style-type: none;
+}
+.navigation{
+    z-index: 1;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    .appname-container{
+        display: flex;
+        font-size: 2rem;
+        font-weight: 600;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        .in{
+        color: var(--in);
+    }
+    .go{
+        color: var(--go);
+    }
+    }
+   .selection{
+       display: flex;
+       gap: 1.5rem;
+       margin-right: auto;
+       font-weight: 600;
+       font-size: 13px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   .stylish-hamburger{
+       margin-left: auto;
+     .hamburger{
+         background-color: rgb(255, 255, 255);
+         border-radius: 50%;
+         position: relative;
+         padding: .40rem;
+         .line1, .line2, .line3{
+             width: 10px;
+             margin: .10rem;
+             height: 2px;
+             background-color: var(--go);
+         }
+         .line2{
+transform: translateX(-3px);
+        }
+         .line3{
+            transform: translateX(3px);
+        }
+     }
+   } 
+}

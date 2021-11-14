@@ -1,0 +1,292 @@
+.content-container{
+    display: flex;
+    background-color: white;
+.content{
+    display: flex;
+    flex-direction: column;
+     box-shadow: 0px 30px 3rem -7px rgba($color: #000000, $alpha: 0.3);
+     .places-box{
+    //  width: 30px;
+     display: flex;
+    //  padding:7rem 3rem;
+    height: 70vh;
+    //  justify-content: center;
+     position: relative;
+    //  align-items: center;
+        //  background-color: blue;
+        .destination-img{
+            position: relative;
+            object-fit: contain;
+        img{
+            // align-self: center;
+            width: 500px;
+            height: 1000px;
+            height: auto;
+            // object-fit: contain;
+            background-position:center;
+            margin-bottom: auto;
+            margin-left: 8rem;
+            position: relative;
+            border-radius: 5px;
+        }
+        .dot{
+            position: absolute;
+            left: 60%;
+            bottom: 45%;
+            border-radius: 100%;
+            color: rgb(255, 255, 255);
+            border: 3px solid rgb(255, 255, 255);
+            // padding:1rem 1.5rem 1.3rem 1.5rem;
+// padding-bottom: 2px;
+            text-align: center;
+            // font-size: 2rem;
+            font-weight: 700;
+            // font-size: 14rem;
+        }
+    }
+        .destination-img::before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            left: 65%;
+            bottom: 0%;
+            border-radius: 5px;
+            top: 15%;
+            // z-index: -1;
+        }
+        .about-destination{
+            position: absolute;
+            border-radius: 5px;
+            // padding: 1rem 2rem;
+            display: flex;
+            bottom: 10%;
+            right:10%;
+            gap: 1rem;
+            z-index: 2;
+            justify-content: flex-start;
+            flex-direction: column;
+            color: white;
+            width: 25%;
+            background-color: rgb(46, 44, 44);
+            .date, .description, .readmore{
+                font-size: 10px;
+                padding:1rem 3rem 0 2rem;
+            } 
+            .date, .readmore a{
+                color: burlywood;
+                text-decoration: none;
+
+            }
+            .destination-name{
+                padding:0 2rem;
+
+            }
+            .destination-slidebtn{
+                display: flex;
+                justify-content: center;
+                // gap: 5rem;
+                // margin: auto;
+                .slidebtn-left, .slidebtn-right{
+                    padding:.75rem 2.5rem;
+                    color: burlywood;
+                    width: 100%;
+transition: all 200ms ease-out;
+}
+                .slidebtn-left:hover, .slidebtn-right:hover{
+                    // border: 1px solid black;
+ background-color: black;
+}
+            }
+        }
+    }
+    .second-section-header, .third-section-header{
+        font-size: 3rem;
+    font-weight: 700;
+    margin: auto;
+    padding:3rem;
+        }
+        .project-images{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            height: 71vh;
+            gap: 3rem;
+            margin-top: auto;
+            .image-content2{
+align-self: flex-start;
+img{
+    margin-top: 2rem;
+
+}
+            }
+            .image-content3{
+                align-self: flex-end;
+            }
+            .image-content1, .image-content2, .image-content3{
+                justify-content: center;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                // gap: 1rem;
+                img{
+    border-radius: 5px;
+
+                }
+                .climbing, .safari, .skydiving{
+                    position: relative;
+                    z-index: 1;
+                    margin-bottom: 1rem;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+                }
+                .climbing::before, .safari::before, .skydiving::before{
+                    content: '';
+                    width: 60%;
+                    height: 50%;
+                    position: absolute;
+                    left: 0%;
+                    top: 40%;
+                    bottom: 0%;
+                    z-index: -1;
+                }
+                .climbing::before{
+                    background-color:#9FCCED ;
+                } .safari::before{
+                    background-color:#F7E7C2 ;
+                    
+                }
+                .skydiving::before{
+                    background-color:#95a8c0 ;
+                    
+                }
+                .climbing-link a, .safari-link a, .diving-link a{
+    font-size: .86rem;
+}
+.climbing-link a{
+    color:#9FCCED ;
+    
+} .safari-link a{
+    color:#FDD365 ;
+    
+                } .diving-link a{
+color:#5E81A9 ;
+                    
+                }
+            img{
+                display: flex;
+                width: 200px;
+                height: 230px;
+            }
+            p{
+                font-size: 11px;
+                margin-top: 2rem ;
+            }
+            }
+        }
+ .fourthSection::before{
+     content: '';
+     position: absolute;
+height: 50%;
+background-color: rgb(75, 73, 73);
+transform: rotate(-9deg);
+width: 300%;
+bottom: -5%;
+left: -40%;
+right: 30%;
+ }
+        .fourthSection{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+     position: relative;
+            background-color: white;
+            gap: 2rem;
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+width: 350px;
+// flex-grow:1;
+pointer-events: none;
+margin-top: auto;
+// height: 100%;
+// margin-left: auto;
+border-radius: 50px;
+background-color: rgb(28, 212, 83);
+box-shadow: 7px 15px 25px  rgba($color: #000000, $alpha: .12);
+// box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+z-index: 2;
+
+}            
+.aboutperson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    gap: .50rem;
+    width: 350px;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 20px 2rem 0px rgba($color: #000000, $alpha: 0.2);
+    // background-color: yellow;
+    z-index: 2;
+    .image img{
+        width: 100px;
+        border-radius: 400px;
+    }
+    .person-name{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .job-description{
+        font-weight: 100;
+    }
+    .number{
+        font-family: 'poppins';
+        color: yellowgreen;
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        // background-colo  r: violet;
+        // width: 100%;
+        text-align: center;
+        }
+        p{
+            font-size: 11px;
+            padding: 1rem 1.5rem;
+            color: white;
+        }
+        .followme-discover{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            font-size: .65rem;
+            color: white;
+.follow{
+    border: 1px solid rgb(158, 154, 154);
+}
+.discover{
+    background-color: white;
+    color: red;
+}
+            .follow, .discover{
+padding: .75rem 2rem;
+
+            }
+        }
+}
+        }
+}
+
+}
